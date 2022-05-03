@@ -26,7 +26,7 @@ function enumFolder(folderPath) {
 
 function createFileAndFolderLists(context, callback) {
   try {
-    var cordovaLib = context.requireCordovaModule('cordova-lib');
+    var cordovaLib = context.require('cordova-lib');
     var platformAPI = cordovaLib.cordova_platforms.getPlatformApi('android');
     var nodeJsProjectRoot = 'www/nodejs-project';
     // The Android application's assets path will be the parent of the application's www folder.
